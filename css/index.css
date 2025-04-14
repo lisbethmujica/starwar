@@ -1,0 +1,151 @@
+*{
+  margin :0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffe81f;
+  font-family: "Orbitron", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.animacion {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; 
+  z-index: -5; 
+}
+.particula {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  opacity: 1;
+  animation: flotar 6s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1.3;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.2);
+    opacity: 1.7;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1.3;
+  }
+}
+
+.intro {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.intro h1 {
+  animation: inicio 5s infinite alternate;
+}
+.parte2 {
+  position: relative;
+  font-size: 1.2rem;
+  text-align: center;
+  animation: inicio 5s infinite alternate;
+}
+
+ a {
+  color:  #031bcc;
+  top: 10px;
+  left: 80vh;
+  width: 100%;
+  text-decoration: none;
+  
+ }
+
+@keyframes inicio {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.parent {
+  max-width: 960px;
+  margin: 100px auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.parent > div {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  
+}
+
+.cards .div1 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div2 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div4 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.div5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div6 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+
+.tarjetitas {
+  width: 250px;
+  background: linear-gradient(145deg, #1d2875, #0f0f0f);
+  color: white;
+  border: 3px solid #ffe81f;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ffe81f;
+  font-family: 'Orbitron', sans-serif;
+  padding: 15px;
+  transition: transform 0.3s;
+  
+}
+
+.tarjetitas:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #fff700;
+}
+
+.tarjeta-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ffe81f;
+}
+
+.tarjeta-body p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
