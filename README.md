@@ -2,7 +2,8 @@
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
   <img src="https://cdn.glitch.global/31c82ea3-2444-4ff4-bc3f-db600f55e798/starwar.JPG?v=1744670628014" style="width: 100%; height: auto;" />
 </div>
-## ¿Con qué tecnologías se creó esta práctica?
+
+¿Con qué tecnologías se creó esta práctica?
 
 Se adaptó el uso de **SWAPI**, una API que permite obtener la siguiente información:
 
